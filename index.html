@@ -1,0 +1,494 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ember & Oak | Modern American Dining</title>
+    <meta name="description" content="Discover Ember & Oak, a modern American dining experience featuring thoughtfully prepared food, craft drinks, and warm hospitality.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <nav class="nav container">
+
+            <a href="#home" class="nav__logo">
+                EMBER <span>&</span> OAK
+            </a>
+
+            <button class="nav__toggle" id="nav-toggle"
+                aria-label="Open navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav__menu" id="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#story">Our Story</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#events">Private Events</a>
+                <a href="#contact">Contact</a>
+                <a href="#reservations" class="nav__reserve">
+                    Reserve a Table
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+
+            <div class="hero__overlay"></div>
+
+            <div class="hero__content container">
+
+                <p class="eyebrow">GOOD FOOD. GOOD COMPANY.</p>
+
+                <h1>
+                    Gather Around<br>
+                    <span>Something Good.</span>
+                </h1>
+
+                <p class="hero__description">
+                    A modern neighborhood dining experience,
+                    bringing together fresh ingredients, bold flavors,
+                    and unforgettable moments.
+                </p>
+
+                <div class="hero__buttons">
+                    <a href="#reservations" class="button button--primary">
+                        Reserve a Table
+                    </a>
+
+                    <a href="#menu" class="button button--outline">
+                        Explore Our Menu
+                    </a>
+                </div>
+
+            </div>
+
+            <a href="#story" class="hero__scroll">
+                SCROLL TO EXPLORE ↓
+            </a>
+
+        </section>
+
+
+        <!-- INTRODUCTION -->
+        <section class="story section" id="story">
+
+            <div class="container story__grid">
+
+                <div class="story__image">
+                    <img
+                        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000"
+                        alt="Warm and inviting modern restaurant interior">
+                </div>
+
+                <div class="story__content">
+
+                    <p class="eyebrow">WELCOME TO EMBER & OAK</p>
+
+                    <h2>
+                        Made for the<br>
+                        Moments That Matter.
+                    </h2>
+
+                    <p>
+                        At Ember & Oak, we believe the best memories
+                        are made around the table. Our kitchen brings
+                        together familiar favorites, fresh ingredients,
+                        and a modern approach to American dining.
+                    </p>
+
+                    <p>
+                        Whether you're meeting friends, enjoying
+                        date night, or celebrating something special,
+                        there's always a place for you here.
+                    </p>
+
+                    <a href="#events" class="text-link">
+                        Discover Our Experience →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MENU -->
+        <section class="menu-section section" id="menu">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">FROM OUR KITCHEN</p>
+                    <h2>A Taste of Ember & Oak</h2>
+                    <p>
+                        Thoughtfully prepared dishes made for
+                        sharing, savoring, and coming back for.
+                    </p>
+                </div>
+
+                <div class="menu__grid">
+
+                    <article class="menu-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800"
+                            alt="Grilled steak with fresh herbs">
+
+                        <div class="menu-card__content">
+                            <div class="menu-card__title">
+                                <h3>Oak-Grilled Steak</h3>
+                                <span>$28</span>
+                            </div>
+                            <p>
+                                Grilled steak, roasted garlic butter,
+                                seasonal vegetables.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=800"
+                            alt="Freshly prepared restaurant entrée">
+
+                        <div class="menu-card__content">
+                            <div class="menu-card__title">
+                                <h3>Seasonal Harvest Bowl</h3>
+                                <span>$18</span>
+                            </div>
+                            <p>
+                                Fresh greens, roasted vegetables,
+                                grains, house dressing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800"
+                            alt="Fresh pasta with herbs">
+
+                        <div class="menu-card__content">
+                            <div class="menu-card__title">
+                                <h3>House-Made Pasta</h3>
+                                <span>$22</span>
+                            </div>
+                            <p>
+                                Fresh pasta, parmesan, herbs,
+                                and our signature sauce.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="center-button">
+                    <a href="#contact" class="button button--dark">
+                        View Full Menu
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPERIENCE -->
+        <section class="experience">
+
+            <div class="experience__content container">
+                <p class="eyebrow">THE EMBER & OAK EXPERIENCE</p>
+
+                <h2>
+                    Come Hungry.<br>
+                    Leave Happy.
+                </h2>
+
+                <p>
+                    Good food is only the beginning.
+                    Enjoy a welcoming atmosphere, thoughtful service,
+                    and a place worth returning to.
+                </p>
+
+                <a href="#reservations" class="button button--primary">
+                    Join Us Tonight
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- GALLERY -->
+        <section class="gallery section" id="gallery">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">A LOOK INSIDE</p>
+                    <h2>Life Around Our Table</h2>
+                    <p>
+                        A little taste of the food, atmosphere,
+                        and moments that make us who we are.
+                    </p>
+                </div>
+
+                <div class="gallery__grid">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1000"
+                        alt="Beautifully presented restaurant meal">
+
+                    <img
+    src="https://images.unsplash.com/photo-1712746785117-6aec15c9f368?auto=format&fit=crop&w=1200&q=80"
+    alt="Beautifully plated restaurant dishes on a wooden table">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800"
+                        alt="Restaurant dining room">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1547592180-85f173990554?w=800"
+                        alt="Fresh seasonal restaurant dish">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- REVIEWS -->
+        <section class="reviews section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">THE GOOD WORD</p>
+                    <h2>Made Better Together.</h2>
+                    <p>
+                        A place for good food, great company,
+                        and memorable evenings.
+                    </p>
+                </div>
+
+                <div class="reviews__grid">
+
+                    <article class="review-card">
+                        <div class="review-card__stars">★★★★★</div>
+                        <p>
+                            "The atmosphere, food, and attention
+                            to detail make this a place worth visiting."
+                        </p>
+                        <h3>Sample Guest Review</h3>
+                        <span>Concept website content</span>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-card__stars">★★★★★</div>
+                        <p>
+                            "A welcoming place to enjoy a great meal
+                            with friends and family."
+                        </p>
+                        <h3>Sample Guest Review</h3>
+                        <span>Concept website content</span>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-card__stars">★★★★★</div>
+                        <p>
+                            "Fresh food, a beautiful setting,
+                            and an experience worth repeating."
+                        </p>
+                        <h3>Sample Guest Review</h3>
+                        <span>Concept website content</span>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRIVATE EVENTS -->
+        <section class="events section" id="events">
+
+            <div class="container events__grid">
+
+                <div class="events__content">
+                    <p class="eyebrow">MAKE IT A CELEBRATION</p>
+
+                    <h2>
+                        Gather for<br>
+                        Something Special.
+                    </h2>
+
+                    <p>
+                        From birthdays and anniversaries to business
+                        dinners and private celebrations, Ember & Oak
+                        is the perfect setting for bringing people
+                        together.
+                    </p>
+
+                    <a href="mailto:hello@emberandoak.example?subject=Private%20Event%20Inquiry"
+                       class="button button--dark">
+                        Plan Your Event
+                    </a>
+                </div>
+
+                <div class="events__image">
+                    <img
+                        src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1000"
+                        alt="Elegant private dining celebration">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESERVATIONS AND ORDERING -->
+        <section class="reservation section" id="reservations">
+
+            <div class="container reservation__content">
+
+                <p class="eyebrow">YOUR TABLE IS WAITING</p>
+
+                <h2>Let's Make Tonight Delicious.</h2>
+
+                <p>
+                    Planning a dinner out? Reserve your table
+                    or order your favorites for pickup.
+                </p>
+
+                <div class="reservation__buttons">
+                    <a href="mailto:hello@emberandoak.example?subject=Table%20Reservation"
+                       class="button button--primary">
+                        Request a Reservation
+                    </a>
+
+                    <a href="#menu" class="button button--outline">
+                        Order Pickup
+                    </a>
+                </div>
+
+                <span class="reservation__note">
+                    Demo project: reservation and ordering links
+                    will be connected to real services later.
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOCATION AND HOURS -->
+        <section class="location section" id="contact">
+
+            <div class="container location__grid">
+
+                <div class="location__content">
+
+                    <p class="eyebrow">COME SEE US</p>
+
+                    <h2>Find Your Way<br>to Our Table.</h2>
+
+                    <div class="location__detail">
+                        <h3>Location</h3>
+                        <p>123 Oak Street<br>Richmond, VA 23220</p>
+                    </div>
+
+                    <div class="location__detail">
+                        <h3>Hours</h3>
+                        <p>
+                            Monday – Thursday: 11 AM – 9 PM<br>
+                            Friday – Saturday: 11 AM – 10 PM<br>
+                            Sunday: 10 AM – 8 PM
+                        </p>
+                    </div>
+
+                    <div class="location__detail">
+                        <h3>Contact</h3>
+                        <p>
+                            (804) 555-0100<br>
+                            hello@emberandoak.example
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="location__map">
+                    <div>
+                        <span>EMBER & OAK</span>
+                        <p>Richmond, Virginia</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=123+Oak+Street+Richmond+VA"
+                           target="_blank" rel="noopener">
+                            Get Directions →
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer__content">
+
+            <div class="footer__brand">
+                <a href="#home" class="nav__logo">
+                    EMBER <span>&</span> OAK
+                </a>
+                <p>
+                    Good food. Good company.
+                    Always a place at our table.
+                </p>
+            </div>
+
+            <div class="footer__links">
+                <a href="#story">Our Story</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#events">Private Events</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer__bottom">
+                <p>© 2026 Ember & Oak. Concept website by WIY.</p>
+                <a href="#home">Back to Top ↑</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
