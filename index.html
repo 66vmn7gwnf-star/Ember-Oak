@@ -163,83 +163,167 @@
 
 
         <!-- MENU -->
-        <section class="menu-section section" id="menu">
+        
+<section class="menu-section section" id="menu">
 
-            <div class="container">
+    <div class="container">
 
-                <div class="section-heading">
-                    <p class="eyebrow">FROM OUR KITCHEN</p>
-                    <h2>A Taste of Ember & Oak</h2>
+        <!-- SECTION INTRO -->
+        <div class="section-heading">
+            <p class="eyebrow">FROM OUR KITCHEN</p>
+
+            <h2>A Taste of Ember & Oak</h2>
+
+            <p>
+                Thoughtfully prepared dishes made for
+                sharing, savoring, and coming back for.
+            </p>
+        </div>
+
+
+        <!-- MENU FILTERS -->
+        <div class="menu__filters">
+
+            <button class="menu-filter active"
+                    type="button"
+                    data-filter="all"
+                    aria-pressed="true">
+                All Dishes
+            </button>
+
+            <button class="menu-filter"
+                    type="button"
+                    data-filter="entrees"
+                    aria-pressed="false">
+                Entrees
+            </button>
+
+            <button class="menu-filter"
+                    type="button"
+                    data-filter="vegetarian"
+                    aria-pressed="false">
+                Vegetarian
+            </button>
+
+            <button class="menu-filter"
+                    type="button"
+                    data-filter="pasta"
+                    aria-pressed="false">
+                Pasta
+            </button>
+
+        </div>
+
+
+        <!-- MENU GRID -->
+        <div class="menu__grid">
+
+            <!-- DISH ONE -->
+            <article class="menu-card" data-category="entrees">
+
+                <div class="menu-card__image">
+                    <img
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=85"
+                        alt="Oak-grilled steak with fresh herbs"
+                        loading="lazy">
+
+                    <span class="menu-card__category">
+                        HOUSE FAVORITE
+                    </span>
+                </div>
+
+                <div class="menu-card__content">
+
+                    <div class="menu-card__title">
+                        <h3>Oak-Grilled Steak</h3>
+                        <span>$28</span>
+                    </div>
+
                     <p>
-                        Thoughtfully prepared dishes made for
-                        sharing, savoring, and coming back for.
+                        Grilled steak, roasted garlic butter,
+                        seasonal vegetables, and fresh herbs.
                     </p>
-                </div>
-
-                <div class="menu__grid">
-
-                    <article class="menu-card">
-                        <img
-                            src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800"
-                            alt="Grilled steak with fresh herbs">
-
-                        <div class="menu-card__content">
-                            <div class="menu-card__title">
-                                <h3>Oak-Grilled Steak</h3>
-                                <span>$28</span>
-                            </div>
-                            <p>
-                                Grilled steak, roasted garlic butter,
-                                seasonal vegetables.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="menu-card">
-                        <img
-                            src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=800"
-                            alt="Freshly prepared restaurant entrée">
-
-                        <div class="menu-card__content">
-                            <div class="menu-card__title">
-                                <h3>Seasonal Harvest Bowl</h3>
-                                <span>$18</span>
-                            </div>
-                            <p>
-                                Fresh greens, roasted vegetables,
-                                grains, house dressing.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="menu-card">
-                        <img
-                            src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800"
-                            alt="Fresh pasta with herbs">
-
-                        <div class="menu-card__content">
-                            <div class="menu-card__title">
-                                <h3>House-Made Pasta</h3>
-                                <span>$22</span>
-                            </div>
-                            <p>
-                                Fresh pasta, parmesan, herbs,
-                                and our signature sauce.
-                            </p>
-                        </div>
-                    </article>
 
                 </div>
 
-                <div class="center-button">
-                    <a href="#contact" class="button button--dark">
-                        View Full Menu
-                    </a>
+            </article>
+
+
+            <!-- DISH TWO -->
+            <article class="menu-card" data-category="vegetarian">
+
+                <div class="menu-card__image">
+                    <img
+                        src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1000&q=85"
+                        alt="Fresh seasonal harvest bowl"
+                        loading="lazy">
+
+                    <span class="menu-card__category">
+                        FRESH & SEASONAL
+                    </span>
                 </div>
 
-            </div>
+                <div class="menu-card__content">
 
-        </section>
+                    <div class="menu-card__title">
+                        <h3>Seasonal Harvest Bowl</h3>
+                        <span>$18</span>
+                    </div>
+
+                    <p>
+                        Fresh greens, roasted vegetables,
+                        grains, and house-made dressing.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- DISH THREE -->
+            <article class="menu-card" data-category="pasta">
+
+                <div class="menu-card__image">
+                    <img
+                        src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1000&q=85"
+                        alt="House-made pasta with herbs and parmesan"
+                        loading="lazy">
+
+                    <span class="menu-card__category">
+                        MADE IN HOUSE
+                    </span>
+                </div>
+
+                <div class="menu-card__content">
+
+                    <div class="menu-card__title">
+                        <h3>House-Made Pasta</h3>
+                        <span>$22</span>
+                    </div>
+
+                    <p>
+                        Fresh pasta, parmesan, herbs,
+                        and our signature sauce.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- FULL MENU BUTTON -->
+        <div class="center-button">
+            <a href="#contact" class="button button--dark">
+                View Full Menu
+                <span>→</span>
+            </a>
+        </div>
+
+    </div>
+
+</section>
 
 
         <!-- EXPERIENCE -->
