@@ -891,3 +891,328 @@ h2 {
         flex-direction: column;
     }
 }
+
+
+/* =================================
+   EMBER & OAK — DESIGN POLISH
+================================= */
+
+/* GLOBAL REFINEMENTS */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+::selection {
+    background: var(--terracotta);
+    color: var(--white);
+}
+
+.container {
+    width: min(1240px, 90%);
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+/* NAVIGATION POLISH */
+
+.header {
+    box-shadow: 0 3px 18px rgba(32, 34, 31, 0.04);
+}
+
+.nav {
+    min-height: 88px;
+}
+
+.nav__logo {
+    font-size: 1.7rem;
+    letter-spacing: 1.5px;
+}
+
+.nav__menu > a:not(.nav__reserve) {
+    position: relative;
+}
+
+.nav__menu > a:not(.nav__reserve)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: var(--terracotta);
+    transition: width 0.3s ease;
+}
+
+.nav__menu > a:not(.nav__reserve):hover::after {
+    width: 100%;
+}
+
+.nav__menu .nav__reserve {
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.nav__menu .nav__reserve:hover {
+    transform: translateY(-2px);
+}
+
+
+/* BUTTON POLISH */
+
+.button {
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* HERO POLISH */
+
+.hero {
+    min-height: 720px;
+    background-position: center 55%;
+}
+
+.hero__content {
+    max-width: 1240px;
+}
+
+.hero h1 {
+    letter-spacing: -2px;
+}
+
+.hero__description {
+    max-width: 490px;
+    font-size: 1.05rem;
+}
+
+.hero__scroll {
+    transition: color 0.3s ease;
+}
+
+.hero__scroll:hover {
+    color: var(--sand);
+}
+
+
+/* SECTION HEADING POLISH */
+
+.section-heading {
+    margin-bottom: 65px;
+}
+
+.section-heading h2 {
+    letter-spacing: -1px;
+}
+
+.section-heading > p:last-child {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* STORY IMAGE POLISH */
+
+.story__image,
+.events__image {
+    position: relative;
+    overflow: hidden;
+}
+
+.story__image img,
+.events__image img {
+    transition: transform 0.7s ease;
+}
+
+.story__image:hover img,
+.events__image:hover img {
+    transform: scale(1.045);
+}
+
+
+/* MENU CARD POLISH */
+
+.menu-card {
+    box-shadow: 0 8px 25px rgba(32, 34, 31, 0.05);
+    transition: transform 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 16px 35px rgba(32, 34, 31, 0.12);
+}
+
+.menu-card {
+    border-bottom: 3px solid transparent;
+}
+
+.menu-card:hover {
+    border-bottom-color: var(--terracotta);
+}
+
+.menu-card img {
+    transition: transform 0.7s ease;
+}
+
+.menu-card__content {
+    padding: 28px;
+}
+
+.menu-card__title h3 {
+    letter-spacing: -0.3px;
+}
+
+
+/* GALLERY POLISH */
+
+.gallery__grid {
+    gap: 16px;
+}
+
+.gallery__grid img {
+    overflow: hidden;
+    transition: transform 0.6s ease,
+                filter 0.4s ease;
+}
+
+.gallery__grid img:hover {
+    filter: brightness(0.9);
+    transform: scale(1.015);
+}
+
+
+/* REVIEW CARD POLISH */
+
+.review-card {
+    border-top: 3px solid var(--terracotta);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(32, 34, 31, 0.08);
+}
+
+
+/* EVENTS POLISH */
+
+.events__image {
+    box-shadow: 18px 18px 0 var(--sand);
+}
+
+
+/* LOCATION POLISH */
+
+.location__map {
+    position: relative;
+    overflow: hidden;
+}
+
+.location__map a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.location__map a:hover {
+    transform: translateX(5px);
+}
+
+
+/* FOOTER POLISH */
+
+.footer__links a {
+    transition: color 0.3s ease;
+}
+
+.footer__bottom a {
+    transition: color 0.3s ease;
+}
+
+.footer__bottom a:hover {
+    color: var(--sand);
+}
+
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+
+
+/* RESPONSIVE POLISH */
+
+@media (max-width: 768px) {
+
+    .section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .nav {
+        min-height: 72px;
+    }
+
+    .nav__logo {
+        font-size: 1.4rem;
+    }
+
+    .hero {
+        min-height: 620px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .events__image {
+        box-shadow: 10px 10px 0 var(--sand);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .hero__description {
+        font-size: 0.92rem;
+    }
+
+    .menu-card__content {
+        padding: 22px;
+    }
+
+    .events__image {
+        box-shadow: 7px 7px 0 var(--sand);
+    }
+}
+
