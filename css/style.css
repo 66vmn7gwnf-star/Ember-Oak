@@ -1115,46 +1115,186 @@ h2 {
 }
 
 
-/* ================================
-   REVIEWS
-================================ */
+
+/* =================================
+   EMBER & OAK — CUSTOMER REVIEWS
+================================= */
 
 .reviews {
     background: #EAE5DA;
+    position: relative;
+    overflow: hidden;
 }
+
+/* REVIEWS GRID */
 
 .reviews__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
+    margin-top: 55px;
 }
 
+/* REVIEW CARD */
+
 .review-card {
-    background: var(--cream);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 320px;
     padding: 35px;
+    background: var(--cream);
+    border: 1px solid rgba(40, 35, 28, 0.07);
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 40px rgba(40, 35, 28, 0.08);
+}
+
+/* CARD TOP */
+
+.review-card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
 }
 
 .review-card__stars {
     color: var(--terracotta);
     letter-spacing: 4px;
-    margin-bottom: 22px;
+    font-size: 0.9rem;
 }
 
-.review-card > p {
+/* DECORATIVE QUOTATION */
+
+.review-card__quote {
+    color: var(--terracotta);
+    font-family: Georgia, serif;
+    font-size: 5rem;
+    line-height: 0.7;
+    opacity: 0.45;
+}
+
+/* REVIEW TEXT */
+
+.review-card__text {
     color: var(--text);
-    line-height: 1.8;
-    margin-bottom: 25px;
-}
-
-.review-card h3 {
+    font-family: Georgia, serif;
     font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    flex-grow: 1;
 }
 
-.review-card span {
+/* REVIEW AUTHOR */
+
+.review-card__author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(40, 35, 28, 0.12);
+}
+
+.review-card__avatar {
+    display: grid;
+    place-items: center;
+    width: 43px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #E7D9CB;
+    color: var(--terracotta);
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+}
+
+.review-card__author h3 {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.review-card__author span {
     display: block;
     color: var(--text);
-    font-size: 0.75rem;
-    margin-top: 7px;
+    font-size: 0.72rem;
+    letter-spacing: 0.5px;
+}
+
+/* SAMPLE CONTENT DISCLAIMER */
+
+.reviews__disclaimer {
+    margin-top: 30px;
+    text-align: center;
+    color: var(--text);
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+
+
+/* =================================
+   REVIEWS RESPONSIVENESS
+================================= */
+
+@media (max-width: 1024px) {
+
+    .reviews__grid {
+        gap: 16px;
+    }
+
+    .review-card {
+        padding: 25px;
+        min-height: 340px;
+    }
+
+    .review-card__text {
+        font-size: 1.05rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .reviews__grid {
+        grid-template-columns: 1fr;
+        max-width: 540px;
+        margin: 40px auto 0;
+        gap: 20px;
+    }
+
+    .review-card {
+        min-height: 0;
+        padding: 30px;
+    }
+
+    .review-card__text {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .review-card {
+        padding: 25px;
+    }
+
+    .review-card__quote {
+        font-size: 4rem;
+    }
+
+    .reviews__disclaimer {
+        font-size: 0.58rem;
+        letter-spacing: 1.3px;
+        line-height: 1.7;
+    }
+
 }
 
 
